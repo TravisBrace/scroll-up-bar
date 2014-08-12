@@ -20,7 +20,7 @@
       return $window.scrollTop() < $bar.offset().top + $bar.outerHeight();
     }
 
-    var $window = $(window),
+    var $window = $('.page-viewport'),
         $document = $(document),
         minY = $bar.css('position') == 'fixed' ? 0 : $bar.offset().top,
         lastY = $window.scrollTop(), // Use last Y to detect scroll direction.
